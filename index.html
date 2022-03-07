@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos prueba 1</title>
+    <!--Vincular css-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Vincular iconos fontawesome-->
+    <script src="https://kit.fontawesome.com/17e5e563d3.js" crossorigin="anonymous"></script>
+    <!--Icono de pestaña-->
+    <link rel="icon" href="iconos/icon-mando.png">
+</head>
+<body>
+    <!--Atajos de brackets-->
+    <!--header.main-header>.container-->
+    <header class="main-header">
+        <div class="container container--flex">
+            <!--.logo-container>h1.logo-->
+            <div class="logo-container column column--50">
+                <h1 class="logo">Tus videojuegos</h1>
+            </div>
+            <!--.main-header__contactInfo>.main-header__contactInfo__phone-->
+            <div class="main-header__contactInfo column column--50">
+                <p class="main-header__contactInfo__phone">
+                    <!--El <i> va dentro del span para que no afecte al texto-->                
+                    <!--<span class="fa-solid fa-phone"> 999-999-999</span>-->
+                    <span><i class="icon-phone fa-solid fa-phone"></i> 999-999-999</span>
+                </p>
+                <p class="main-header__contactInfo__address">
+                    <span><i class="icon-location fa-solid fa-location-dot"></i> C/ Los Olivos 23, Madrid</span>
+                </p>
+            </div>
+        </div>
+    </header>
+    <!--    nav.main-nav>.container-->
+    <nav class="main-nav">
+        <div class="container container--flex">
+            <span><i class="icon-menu fa-solid fa-bars" id="btnmenu"></i></span>
+            <!--ul.menu#menu>li.menu__item*4>a.menu__link-->
+            <ul class="menu" id="menu">
+                <li class="menu__item"><a href="/" class="menu__link menu__link--select">Inicio</a></li>
+                <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link">Galería</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__link">Contactos</a></li>
+            </ul>
+            <!--.social-icon>a.social-icon__link>span-->
+            <div class="social-icon">
+                <a href="" class="social-icon__link"><span><i class="icon-facebook fa-brands fa-facebook"></i></span></a>
+                <a href="" class="social-icon__link"><span><i class="icon-twitter fa-brands fa-twitter"></i></span></a>
+                <a href="" class="social-icon__link"><span><i class="icon-mail fa-solid fa-envelope"></i></span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!--section.banner>img.banner__img+.banner__content-->
+    <section class="banner">
+        <img src="img/banner.jpg" alt="" class="banner__img">
+        <div class="banner__content">Los mejores juegos los encontrarás aquí</div>
+    </section>
+
+    <!--main.main>section.group-->
+    <main class="main">
+        <section class="group group--color">
+            <div class="container">
+                <h2 class="main__title">Bienvenido a tus videojuegos</h2>
+                <p class="main__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias distinctio tenetur explicabo dicta nemo commodi consectetur, 
+                    sequi perferendis accusamus nihil quis quos praesentium quaerat, necessitatibus excepturi voluptate. Architecto, ex! Quidem.</p>
+            </div>
+        </section>
+
+        <section class="group main__about__description">
+            <div class="container container--flex">
+                <div class="column colum--50">
+                    <img src="img/game1.jpg" alt="">
+                </div>
+                <div class="column colum--50">
+                    <h3 class="column__title">Expertos en videojuegos</h3>
+                    <p class="column__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, porro velit. Perspiciatis quam repudiandae vel 
+                        aliquam quaerat, consectetur laborum, vero ullam recusandae optio ex. Velit impedit inventore unde asperiores ratione.</p>
+                    <a href="" class="btn btn--contact">Contact</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="group today-special">
+            <h2 class="today-special__title">Ofertas especiales</h2>
+            <div class="container container__flex">
+                <div class="column column--50-25">
+                    <img src="img/spiderman-ps4.jpg" alt="" class="today-special__img">
+                    <div class="today-special__title">Oferta 1</div>
+                    <div class="today_special__price">15€</div>
+                </div>
+                <div class="column column--50-25">
+                    <img src="img/darksouls3-xbox.jpg" alt="" class="today-special__img">
+                    <div class="today-special__title">Oferta 2</div>
+                    <div class="today_special__price">15€</div>
+                </div>
+                <div class="column column--50-25">
+                    <img src="img/zelda-switch.jpg" alt="" class="today-special__img">
+                    <div class="today-special__title">Oferta 3</div>
+                    <div class="today_special__price">15€</div>
+                </div>
+                <div class="column column--50-25">
+                    <img src="img/ACValhalla-ps4.jpg" alt="" class="today-special__img">
+                    <div class="today-special__title">Oferta 4</div>
+                    <div class="today_special__price">15€</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container container--flex">
+            <div class="column column--33">
+                <h2 class="column__title">¿Por qué visitarnos?</h2>
+                <p class="column__txt">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem adipisci consequuntur debitis necessitatibus blanditiis, dolorem porro inventore assumenda nesciunt maxime architecto magni tempore, consectetur vero distinctio incidunt odio, velit deserunt?</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Contacto</h2>
+                <p class="column__txt">C/ Los Olivos 23, Madrid</p>
+                <p class="column__txt">Teléfono: 999-999-999</p>
+                <p class="column__txt">ayuda@videojuegos.com</p>
+            </div>
+            <div class="column column--33">
+                <h2 class="column__title">Síguenos</h2>
+                <p class="column__txt"><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></p>
+                <p class="column__txt"><a href=""><i class="fa-brands fa-twitter"></i>Twitter</a></p>
+                <p class="column__txt"><a href=""><i class="fa-brands fa-youtube"></i>Visita nuestro canal</a></p>
+            </div>
+            <p class="copy">© 2022 Mis Videjuegos | Todos los derechos reservados</p>
+        </div>
+    </footer>
+
+</body>
+</html>
