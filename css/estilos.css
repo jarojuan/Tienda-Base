@@ -1,0 +1,174 @@
+/*Importar fuentes de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&family=ZCOOL+QingKe+HuangYou&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto Serif', serif;
+    margin: 0;
+}
+
+/*-------------------Estilos base-------------------*/
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.container {
+    width: 100%;
+    margin: auto;
+}
+.container--flex {
+    display: flex;      /*Flexbox*/
+    flex-wrap: wrap;    /*Manda abajo los contenidos que no entren en el container--flex*/
+    justify-content: space-between; /*Alinea en el eje horizontal*/
+    align-items: center; /*Alinea en el eje vertical*/
+}
+.column {
+    width: 100%;
+}
+
+
+/*-------------------Estilos header-------------------*/
+.main-header {
+    width: 100%;
+}
+.logo{
+    font-size: 1.8em;
+    color: red;
+    padding: 10px;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    /*font-weight: 100;*/   /*Grosor de texto*/
+}
+.main-header__contactInfo__phone {
+    background: red;
+    color: white;
+    margin: 0 auto;
+    padding: 10px;
+}
+.main-header__contactInfo__address {
+    padding: 10px;
+    margin: 0;
+}
+
+/*Afecta a todas las clases dentro del main-header que empiecen por icon-*/
+/*Pone a la misma altura y margen los iconos del main-header*/
+.main-header [class*="icon-"]/*:before*/ {     
+    position: relative;
+    top: 2px;
+    right: 5px;
+}
+
+
+/*-------------------Estilos nav y menu-------------------*/
+.main-nav {
+    width: 100%;
+    position: relative;
+    z-index: 2000;
+    padding: 10px;
+}
+.icon-menu {
+    display: block;
+    color: white;
+    /*
+    border: 1px solid white;
+    border-radius: 3px;
+    width: 35px;
+    height: 35px;
+    */
+    line-height: 45px;
+    text-align: center;
+    cursor: pointer;    /*Manita de pulsar al pasar el cursor*/
+    font-size: 2em;
+}
+.social-icon {
+    display: flex;
+    justify-content: space-between;
+}
+.social-icon [class*="icon-"] {
+    color: black;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3em;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border-radius: 50%;
+}
+.social-icon__link {
+    text-decoration: none;  /*Quita el subrayado a los iconos*/
+}
+.menu {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);  /*Fondo negro con transparencias*/
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    /*Para ocultar el menú. La animación se dara con js.*/
+    height: 0;
+    overflow: hidden;
+    /*Para animarlo al aparecer y desaparecer*/
+    transition: height .3s linear;
+}
+/*Texto del menú*/
+.menu__link {
+    display: block;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+/*Cambia el color del fondo al pasar el ratón por los menu__link*/
+.menu__link:hover {
+    background: red;
+}
+/*Resalta en el menú la página en la que estamos*/
+.menu__link--select {   
+    background: red;
+}
+/*Clase que llama js para desplegar el menu*/
+.mostrar {
+    height: 180px;  /*Tamaño que ocupa el menú desplegado*/
+}
+
+
+/*-------------------Estilos de banner-------------------*/
+.banner {   
+    margin-top: -55px;
+    position: relative;
+}
+.banner:before {   /*Transparencia a la imagen del banner*/
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .65);
+    z-index: 1000;
+    top: 0;
+}
+.banner__img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;  /*Mantiene el tamaño de imagen aunque la pentaña se haga más pequeña*/
+}
+.banner__content {
+    width: 90%;
+    color: white;
+    text-align: center;
+    position: absolute;
+    z-index: 1500;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);   /*Centra el texto cuando esta en position:absolute*/
+    font-size: 1.5em;
+    font-weight: bold;
+}
