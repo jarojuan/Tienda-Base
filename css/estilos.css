@@ -4,39 +4,48 @@
 * {
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Roboto Serif', serif;
     margin: 0;
 }
 
+
 /*-------------------Estilos base-------------------*/
+
 img {
     display: block;
     width: 100%;
     max-width: 100%;
 }
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
 .container {
     width: 100%;
     margin: auto;
 }
+
 .container--flex {
     display: flex;      /*Flexbox*/
     flex-wrap: wrap;    /*Manda abajo los contenidos que no entren en el container--flex*/
     justify-content: space-between; /*Alinea en el eje horizontal*/
     align-items: center; /*Alinea en el eje vertical*/
 }
+
 .column {
     width: 100%;
 }
 
 
 /*-------------------Estilos header-------------------*/
+
 .main-header {
     width: 100%;
 }
+
 .logo{
     font-size: 1.8em;
     color: red;
@@ -44,12 +53,14 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'ZCOOL QingKe HuangYou', cursive;
     /*font-weight: 100;*/   /*Grosor de texto*/
 }
+
 .main-header__contactInfo__phone {
     background: red;
     color: white;
     margin: 0 auto;
     padding: 10px;
 }
+
 .main-header__contactInfo__address {
     padding: 10px;
     margin: 0;
@@ -65,14 +76,16 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*-------------------Estilos nav y menu-------------------*/
+
 .main-nav {
     width: 100%;
     position: relative;
     z-index: 2000;
     padding: 10px;
 }
+
 .icon-menu {
-    display: block;
+    /*display: block; /*No funciona*/
     color: white;
     /*
     border: 1px solid white;
@@ -85,10 +98,12 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;    /*Manita de pulsar al pasar el cursor*/
     font-size: 2em;
 }
+
 .social-icon {
     display: flex;
     justify-content: space-between;
 }
+
 .social-icon [class*="icon-"] {
     color: black;
     margin-left: 10px;
@@ -101,9 +116,11 @@ h1, h2, h3, h4, h5, h6 {
     background: white;
     border-radius: 50%;
 }
+
 .social-icon__link {
     text-decoration: none;  /*Quita el subrayado a los iconos*/
 }
+
 .menu {
     position: absolute;
     top: 60px;
@@ -120,6 +137,7 @@ h1, h2, h3, h4, h5, h6 {
     /*Para animarlo al aparecer y desaparecer*/
     transition: height .3s linear;
 }
+
 /*Texto del menú*/
 .menu__link {
     display: block;
@@ -127,14 +145,17 @@ h1, h2, h3, h4, h5, h6 {
     color: white;
     text-decoration: none;
 }
+
 /*Cambia el color del fondo al pasar el ratón por los menu__link*/
 .menu__link:hover {
     background: red;
 }
+
 /*Resalta en el menú la página en la que estamos*/
 .menu__link--select {   
     background: red;
 }
+
 /*Clase que llama js para desplegar el menu*/
 .mostrar {
     height: 180px;  /*Tamaño que ocupa el menú desplegado*/
@@ -142,11 +163,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /*-------------------Estilos de banner-------------------*/
+
 .banner {   
     margin-top: -55px;
     position: relative;
 }
-.banner:before {   /*Transparencia a la imagen del banner*/
+
+/*Transparencia a la imagen del banner*/
+.banner:before {   
     content: '';
     position: absolute;
     width: 100%;
@@ -155,11 +179,13 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 1000;
     top: 0;
 }
+
 .banner__img {
     width: 100%;
     height: 500px;
     object-fit: cover;  /*Mantiene el tamaño de imagen aunque la pentaña se haga más pequeña*/
 }
+
 .banner__content {
     width: 90%;
     color: white;
@@ -172,3 +198,347 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5em;
     font-weight: bold;
 }
+
+
+/*-------------------Estilos de banner-------------------*/
+
+.group--color .container{
+    background: red;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.main__title {
+    margin: 15px 0;
+    font-size: 1.8em;
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-weight: 100;
+}
+
+/*Por si se mete más texto?*/
+/*
+.main__txt {
+    padding: 20px;
+}
+*/
+
+.column__title {
+    font-size: 1.3em;
+}
+
+/*A la 2da columna dentro del main__about__description*/
+.main__about__description .column:nth-child(2) {
+    padding: 10px;
+}
+
+/*Botón de contact*/
+.btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+    background: red;
+    color: white;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+/*Titulo de la zona de ofertas */
+.group__title {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    text-align: center;
+    font-weight: 100;
+    font-size: 1.8em;
+    margin: 30px;
+}
+
+/*Ofertas especiales*/
+.today-special .column {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.today-special__img {
+    margin: auto;
+    max-width: 350px;
+}
+.today-special__title {
+    font-size: 1.3em;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.today-special__price {
+    font-size: 1.5em;
+    color: red;
+    font-weight: bold;
+}
+
+
+/*-------------------Estilos del footer-------------------*/
+
+/*Todo el footer*/
+.main-footer {
+    background: rgb(49, 48, 48);
+    color: white;
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: .8em;
+}
+
+/*Texto de copyright*/
+.copy {
+    text-align: center;
+    margin: auto;
+    margin-top: 15px;
+}
+
+/*Iconos y enlaces del footer*/
+.main-footer [class*="icon-"] {
+    color: white;
+    text-decoration: none; 
+}
+
+/*Solo iconos del footer*/
+.main-footer [class*="icon-"]:before {
+    /*Para separarlos del texto*/
+    position: relative;
+    right: 5px; 
+}
+
+
+
+/*-------------------Estilos responsive-------------------*/
+
+/*Empieza cuando la ventana tenga 480px*/
+@media screen and (min-width:480px) {
+    /*Nombre principal*/
+    .logo {
+        color: white;  
+    }
+
+    /*Información de contacto del header*/
+    .main-header__contactInfo {
+        text-align: right;
+    }   
+    .main-header__contactInfo__phone {
+        background: none;
+    }
+    .main-header__contactInfo__address {
+        color: white;
+    }
+
+    /*Fondo del menu de nav*/
+    .main-nav {
+        background: rgba(0, 0, 0, .65);
+    }
+
+    /*Imagen del banner*/
+    .banner {
+        margin-top: -140px;
+        z-index: -1000;
+    }
+
+    .banner__img {
+        height: 600px;
+    }
+
+    /*Texto del banner*/
+    .banner__content {
+        font-size: 2em;
+    }
+
+    /*Para separar un poco más el main del footer*/
+    .main {
+        padding-bottom: 15px;
+    }
+
+    /*A la 2da columna dentro del main__about__description (Expertos en videojuegos, texto...)*/
+    .main__about__description .column:nth-child(2) {
+        padding-left: 20px; 
+    }
+
+    /*Coloca el boton dentro del main__about__descriptiona la izquierda*/
+    .main__about__description .btn {
+        margin: 0;
+    }
+
+    /*Añade un borde a las ofertas especiales*/
+    .today-special .column {
+        border: 5px solid rgb(163, 158, 158);
+        padding: 10px;
+    }
+
+    /*Para que todas las imágenes tengan el mismo tamaño*/
+    .today-special__img {
+        height: 200px;
+        object-fit: cover;  /*Para evitar que se deforme la imagen*/
+    }
+
+    /*Container del footer (3 columnas)*/
+    .main-footer .container--flex{
+        align-items: flex-start;
+    }
+
+    /*Para que los elementos del column esten una al lado de la otra pero sin pegarse*/
+    .column--50 {
+        width: 49%;
+    }
+    
+    /*Para colocar las ofertas especiales en forma de cuadrícula*/
+    .column--50-25 {
+        width: 49%;
+    }
+    
+    /*Para las columnas del footer*/
+    .column--33 {
+        width: 32%;
+    }
+}
+
+/*Empieza cuando la ventana tenga 768px*/
+@media screen and (min-width:768px) {
+    /*Titulo del main (Bienvenido a tus videojuegos)*/
+    .main__title {
+        font-size: 2.2em;
+    }
+
+    /*Texto de expertos en videojuegos*/
+    .main__about__description {
+        margin-top: 30px;
+    }
+
+    /*Columna del texto inlucido el título*/
+    .main__about__description .column--50:nth-child(2) {
+        font-size: 1em;
+    }
+
+    /*Solo el texto, sin el título*/
+    .main__about__description .column--50:nth-child(2) .column__txt {
+        line-height: 30px;  /*Aumenta el espacio entre las líneas del texto*/
+    }
+
+    /*Las imágenes de las ofertas especiales se ven una al lado de la otra*/
+    .column--50-25 {
+        width: 24.5%;
+    }
+
+    .today-special__img {
+        height: 210x;
+        /*Para evitar que se deforme la imagen, en este caso se comenta 
+        porque ya se aplica en el formato de menos px*/
+        /*object-fit: cover;*/  
+    }
+
+    /*Título de las columnas*/
+    .column__title {
+        font-size: 1.5em;
+    }
+
+    /*Título de ofertas especiales*/
+    .group__title {
+        font-size: 2.2em;
+    }
+
+
+}
+
+/*Empieza cuando la ventana tenga 1024px (Pantalla completa)*/
+@media screen and (min-width:1024px) {
+    /*Logo principal (título)*/
+    .logo {
+        font-size: 2em;
+        padding: 0;
+    }
+
+    /*Contenido tras el banner*/
+    .container{
+        width: 1000px;
+    }
+
+    /*Información de la cabecera*/
+    .main-header__contactInfo__phone, 
+    .main-header__contactInfo__address {
+        padding-right: 0;
+        font-size: 1.15em;
+    }
+
+    /*Barra de menu*/
+    .main-nav {
+        padding: 0;
+    }
+
+    /*Imagen del banner*/
+    .banner__img {
+        height: 700px;
+    }
+
+    /*Texto del banner*/
+    .banner__content{
+        font-size: 2.5em;
+    }
+
+    
+    /*Esto es para ocultar y cambiar la barra de menú, pero no me funciona*/
+    /*Icono del menú*/
+    .icon-menu {
+       /*display: none; /*Se oculta, no funciona*/
+       visibility: hidden;
+       /*visibility: visible;*/ 
+    }
+    /*Muestra el menú desplegable en forma de linea de forma estática*/
+    .menu {
+        position: static;
+        display: flex;
+        height: auto;
+        width: auto;
+    }
+    .menu__link {
+        padding: 20px;
+    }
+    /*Termina la parte de ocultar menu*/
+    
+
+    /*Contenido despues del banner*/
+    .group--color .container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    
+    /*Título bienvenido a tus videojuegos*/
+    .main__title {
+        font-size: 2.2em;
+    }
+
+    /*Texto de expertos en videojuegos*/
+    .main__about__description .column--50:nth-child(2) .column__txt {
+        line-height: 40px;  /*Espacio ente líenas*/
+    }
+
+    /*Título de ofertas especiales*/
+    .today-special__title {
+        font-size: 1.5em;
+    }
+
+    /*Imagenes de las ofertas*/
+    .today-special__img {
+        height: 230px;
+        /*Para evitar que se deforme la imagen, en este caso se comenta 
+        porque ya se aplica en el formato de menos px*/
+        /*object-fit: cover;*/  
+    }
+
+    /*Precio de las ofertas especiales*/
+    .today-special__price {
+        font-size: 1.6em;
+    }
+
+    /*Cuerpo del footer*/
+    .main-footer {
+        padding-top: 20px;  /*Espacio en blanco por arriba*/
+        padding-bottom: 20px;   /*Espacio en blanco por abajo*/
+    }
+}
+
+

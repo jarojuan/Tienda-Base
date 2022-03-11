@@ -7,10 +7,17 @@
     <title>Juegos prueba 1</title>
     <!--Vincular css-->
     <link rel="stylesheet" href="css/estilos.css">
+
     <!--Vincular iconos fontawesome-->
-    <script src="https://kit.fontawesome.com/17e5e563d3.js" crossorigin="anonymous"></script>
+    <!--
+        <script src="https://kit.fontawesome.com/17e5e563d3.js" crossorigin="anonymous"></script>
+    -->
+    <!--Trabajar con los iconos en local, archivo css y carpeta de webfonts-->
+    <link rel="stylesheet" href="css/all.min.css">
+
     <!--Icono de pestaña-->
     <link rel="icon" href="iconos/icon-gamepad.svg">
+
 </head>
 <body>
     <!--Atajos de brackets-->
@@ -73,10 +80,10 @@
 
         <section class="group main__about__description">
             <div class="container container--flex">
-                <div class="column colum--50">
+                <div class="column column--50">
                     <img src="img/game1.jpg" alt="">
                 </div>
-                <div class="column colum--50">
+                <div class="column column--50">
                     <h3 class="column__title">Expertos en videojuegos</h3>
                     <p class="column__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, porro velit. Perspiciatis quam repudiandae vel 
                         aliquam quaerat, consectetur laborum, vero ullam recusandae optio ex. Velit impedit inventore unde asperiores ratione.</p>
@@ -86,27 +93,27 @@
         </section>
 
         <section class="group today-special">
-            <h2 class="today-special__title">Ofertas especiales</h2>
-            <div class="container container__flex">
+            <h2 class="group__title">Ofertas especiales</h2>
+            <div class="container container--flex">
                 <div class="column column--50-25">
                     <img src="img/spiderman-ps4.jpg" alt="" class="today-special__img">
                     <div class="today-special__title">Oferta 1</div>
-                    <div class="today_special__price">15€</div>
+                    <div class="today-special__price">15€</div>
                 </div>
                 <div class="column column--50-25">
                     <img src="img/darksouls3-xbox.jpg" alt="" class="today-special__img">
                     <div class="today-special__title">Oferta 2</div>
-                    <div class="today_special__price">15€</div>
+                    <div class="today-special__price">15€</div>
                 </div>
                 <div class="column column--50-25">
                     <img src="img/zelda-switch.jpg" alt="" class="today-special__img">
                     <div class="today-special__title">Oferta 3</div>
-                    <div class="today_special__price">15€</div>
+                    <div class="today-special__price">15€</div>
                 </div>
                 <div class="column column--50-25">
                     <img src="img/ACValhalla-ps4.jpg" alt="" class="today-special__img">
                     <div class="today-special__title">Oferta 4</div>
-                    <div class="today_special__price">15€</div>
+                    <div class="today-special__price">15€</div>
                 </div>
             </div>
         </section>
@@ -126,9 +133,17 @@
             </div>
             <div class="column column--33">
                 <h2 class="column__title">Síguenos</h2>
-                <p class="column__txt"><a href=""><i class="fa-brands fa-facebook"></i>Facebook</a></p>
-                <p class="column__txt"><a href=""><i class="fa-brands fa-twitter"></i>Twitter</a></p>
-                <p class="column__txt"><a href=""><i class="fa-brands fa-youtube"></i>Visita nuestro canal</a></p>
+
+                <!--
+                <p class="column__txt"><a href=""><i class="icon-facebook fa-brands fa-facebook"></i>Facebook</a></p>
+                <p class="column__txt"><a href=""><i class="icon-twitter fa-brands fa-twitter"></i>Twitter</a></p>
+                <p class="column__txt"><a href=""><i class="icon-youtube fa-brands fa-youtube"></i>Visita nuestro canal</a></p>
+                -->
+
+                <p class="column__txt"><a href="" class="icon-facebook fa-brands fa-facebook">Facebook</a></p>
+                <p class="column__txt"><a href="" class="icon-twitter fa-brands fa-twitter">Twitter</a></p>
+                <p class="column__txt"><a href="" class="icon-youtube fa-brands fa-youtube">Visita nuestro canal</a></p>
+
             </div>
             <p class="copy">© 2022 Mis Videjuegos | Todos los derechos reservados</p>
         </div>
