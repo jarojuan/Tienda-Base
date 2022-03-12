@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu {
     position: absolute;
-    top: 60px;
+    top: 50px;
     left: 0;
     width: 100%;
     background: rgba(0, 0, 0, .8);  /*Fondo negro con transparencias*/
@@ -451,6 +451,11 @@ h1, h2, h3, h4, h5, h6 {
         padding: 0;
     }
 
+    .menu {
+        position: absolute;
+        top: 48px;
+    }
+
     /*Contenido tras el banner*/
     .container{
         width: 1000px;
@@ -465,7 +470,7 @@ h1, h2, h3, h4, h5, h6 {
 
     /*Barra de menu*/
     .main-nav {
-        padding: 0;
+        padding: 8px;
     }
 
     /*Imagen del banner*/
@@ -479,14 +484,16 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     
+
     /*Esto es para ocultar y cambiar la barra de menú, pero no me funciona*/
     /*Icono del menú*/
-    .icon-menu {
+    /*.icon-menu {
        /*display: none; /*Se oculta, no funciona*/
-       visibility: hidden;
+       /*visibility: hidden;*/
        /*visibility: visible;*/ 
-    }
+    /*}
     /*Muestra el menú desplegable en forma de linea de forma estática*/
+    /*
     .menu {
         position: static;
         display: flex;
@@ -496,8 +503,10 @@ h1, h2, h3, h4, h5, h6 {
     .menu__link {
         padding: 20px;
     }
+    */
     /*Termina la parte de ocultar menu*/
     
+
 
     /*Contenido despues del banner*/
     .group--color .container {

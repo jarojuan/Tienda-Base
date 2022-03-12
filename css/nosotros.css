@@ -1,5 +1,22 @@
 /*Importar fuentes??*/
 
+/*Icono de menu*/
+/*
+.icon-menu {
+    visibility: hidden;
+}
+.menu {
+    position: static;
+    display: flex;
+    height: auto;
+    width: auto;
+}
+.menu__link {
+    padding: 20px;
+}
+*/
+
+
 /*Texto de las consolas*/
 .our-team {
     text-align: center;
