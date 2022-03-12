@@ -1,0 +1,68 @@
+/*Importar fuentes??*/
+
+/*Texto de las consolas*/
+.our-team {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*Alinea las tres imágenes de consolsas al mismo nivel*/
+.our-team .container--flex {
+    align-items: flex-start;
+}
+
+/*Títulos de consolas*/
+.our-team__title {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    color: red;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/*Imagenes de consolas*/
+.our-team__img {
+    /*width: 250px;   /*ancho*/
+    /*height: 170px;  /*Alto*/
+    object-fit: cover;  /*Evitar que se deforme la imagen*/
+    border-radius: 20%;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/*Texto de las consolas*/
+.our-team__txt {
+    padding: 10px;  /*Margen a la izquierda*/
+    text-align: justify;
+}
+
+/*Ventana a partir de 480px*/
+@media  screen and (min-width:480px) {
+    /*Imágenes de consolas*/
+    .our-team__img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+/*Ventana a partir de 768px*/
+@media  screen and (min-width:768px) {
+    /*Imágenes de consolas*/
+    .our-team__img {
+        width: 250px;
+        height: 170px;
+    }
+}
+
+/*Ventana a partir de 1024*/
+@media  screen and (min-width:1024px) {
+    /*Imágenes de consolas*/
+    .our-team__img {
+        width: 300px;
+        height: 220px;
+    }
+
+    /*Títulos de consolas*/
+    .our-team__title {
+        font-size: 1.8em;
+    }
+}
