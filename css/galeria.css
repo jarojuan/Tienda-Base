@@ -1,0 +1,21 @@
+/*Todas las imágenes de la galeria*/
+.gallery__img {
+    object-fit: cover;  /*No deforma las imágenes*/
+    margin-bottom: 10px;    /*Margen por abajo*/
+    cursor: pointer;    /*Cambia el cursor al pasar por encima*/
+    transition: all 0.5s;   /*Hace que el efecto de aumentar la imagen sea más lento*/
+}
+
+/*Al pasar el cursor por las imágenes*/
+.gallery__img:hover {
+    transform: scale(1.02); /*Aumenta un poco el tamaño de la imagen*/
+}
+
+/*Para las imagenes más grandes*/
+.gallery__img--big {
+    height: 400px;
+}
+/*Para las imagenes más pequeñas*/
+.gallery__img--small {
+    height: 200px;
+}

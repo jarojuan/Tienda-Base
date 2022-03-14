@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juegos prueba 1</title>
+    <title>Galería | Juegos prueba 1</title>
     <!--Vincular css-->
     <link rel="stylesheet" href="css/estilos.css">
+
+    <link rel="stylesheet" href="css/galeria.css">
 
     <!--Vincular iconos fontawesome-->
     <!--
@@ -16,7 +18,7 @@
     <link rel="stylesheet" href="css/all.min.css">
 
     <!--Icono de pestaña-->
-    <link rel="icon" href="iconos/icon-gamepad.svg">
+    <link rel="icon" href="iconos/icon-photo.svg">
 
 </head>
 <body>
@@ -48,10 +50,9 @@
             <span><i class="icon-menu fa-solid fa-bars" id="btnmenu"></i></span>
             <!--ul.menu#menu>li.menu__item*4>a.menu__link-->
             <ul class="menu" id="menu">
-                <!--La clase menu__link--select hay que ir moviendola para cada página html-->
-                <li class="menu__item"><a href="index.html" class="menu__link menu__link--select">Inicio</a></li>
+                <li class="menu__item"><a href="index.html" class="menu__link">Inicio</a></li>
                 <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
-                <li class="menu__item"><a href="galeria.html" class="menu__link">Galería</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link menu__link--select">Galería</a></li>
                 <li class="menu__item"><a href="contacto.html" class="menu__link">Contactos</a></li>
             </ul>
             <!--.social-icon>a.social-icon__link>span-->
@@ -65,59 +66,38 @@
 
     <!--section.banner>img.banner__img+.banner__content-->
     <section class="banner">
-        <img src="img/banner.jpg" alt="" class="banner__img">
-        <div class="banner__content">Los mejores juegos los encontrarás aquí</div>
+        <img src="img/galeria/banner-galeria.jpg" alt="" class="banner__img">
+        <div class="banner__content">Lo mejor directo a tu consola</div>
     </section>
 
     <!--main.main>section.group-->
     <main class="main">
-        <section class="group group--color">
-            <div class="container">
-                <h2 class="main__title">Bienvenido a tus videojuegos</h2>
-                <p class="main__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias distinctio tenetur explicabo dicta nemo commodi consectetur, 
-                    sequi perferendis accusamus nihil quis quos praesentium quaerat, necessitatibus excepturi voluptate. Architecto, ex! Quidem.</p>
-            </div>
-        </section>
 
-        <section class="group main__about__description">
-            <div class="container container--flex">
-                <div class="column column--50">
-                    <img src="img/game1.jpg" alt="">
-                </div>
-                <div class="column column--50">
-                    <h3 class="column__title">Expertos en videojuegos</h3>
-                    <p class="column__txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, porro velit. Perspiciatis quam repudiandae vel 
-                        aliquam quaerat, consectetur laborum, vero ullam recusandae optio ex. Velit impedit inventore unde asperiores ratione.</p>
-                    <a href="" class="btn btn--contact">Contact</a>
-                </div>
-            </div>
-        </section>
-
-        <section class="group today-special">
-            <h2 class="group__title">Ofertas especiales</h2>
+        <!--Imágenes de la galería-->
+        <div class="group gallery">
+            <h2 class="group__title">Nuestra Galería</h2>
             <div class="container container--flex">
                 <div class="column column--50-25">
-                    <img src="img/spiderman-ps4.jpg" alt="" class="today-special__img">
-                    <div class="today-special__title">Oferta 1</div>
-                    <div class="today-special__price">15€</div>
+                    <!--La primera imagen se verá grande y la otra más pequeña-->
+                    <img src="img/galeria/gal1.jpg" alt="" class="gallery__img gallery__img--big">
+                    <img src="img/galeria/gal2.jpg" alt="" class="gallery__img gallery__img--small">
                 </div>
                 <div class="column column--50-25">
-                    <img src="img/darksouls3-xbox.jpg" alt="" class="today-special__img">
-                    <div class="today-special__title">Oferta 2</div>
-                    <div class="today-special__price">15€</div>
+                    <!--La primera imagen se verá pequeña y la otra más grande-->
+                    <img src="img/galeria/gal3.jpg" alt="" class="gallery__img gallery__img--small">
+                    <img src="img/galeria/gal4.jpg" alt="" class="gallery__img gallery__img--big">
                 </div>
                 <div class="column column--50-25">
-                    <img src="img/zelda-switch.jpg" alt="" class="today-special__img">
-                    <div class="today-special__title">Oferta 3</div>
-                    <div class="today-special__price">15€</div>
+                    <img src="img/galeria/gal5.jpg" alt="" class="gallery__img gallery__img--big">
+                    <img src="img/galeria/gal6.jpg" alt="" class="gallery__img gallery__img--small">
                 </div>
                 <div class="column column--50-25">
-                    <img src="img/ACValhalla-ps4.jpg" alt="" class="today-special__img">
-                    <div class="today-special__title">Oferta 4</div>
-                    <div class="today-special__price">15€</div>
+                    <img src="img/galeria/gal7.jpg" alt="" class="gallery__img gallery__img--small">
+                    <img src="img/galeria/gal8.jpg" alt="" class="gallery__img gallery__img--big">
                 </div>
             </div>
-        </section>
+        </div>   
+
     </main>
 
     <footer class="main-footer">
@@ -150,7 +130,7 @@
         </div>
     </footer>
 
-    <!--Enlazar con el archivo js-->
+    <!--Enlazar con el archivo menu js-->
     <script src="js/menu.js"></script>
 
 </body>

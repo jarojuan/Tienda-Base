@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6 {
     top: 55px;
     left: 0;
     width: 100%;
-    background: rgba(0, 0, 0, .8);  /*Fondo negro con transparencias*/
+    background: rgba(0, 0, 0, .85);  /*Fondo negro con transparencias*/
     padding: 0;
     margin: 0;
     list-style: none;
@@ -152,6 +152,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /*Resalta en el menú la página en la que estamos*/
+/*Hay que ir moviendola en cada html*/
 .menu__link--select {   
     background: red;
 }
@@ -330,7 +331,7 @@ h1, h2, h3, h4, h5, h6 {
 
     /*Fondo del menu de nav*/
     .main-nav {
-        background: rgba(0, 0, 0, .8);
+        background: rgba(0, 0, 0, .85);
     }
 
     /*Imagen del banner*/
