@@ -19,3 +19,58 @@
 .gallery__img--small {
     height: 200px;
 }
+
+.modal {
+    width: 100%;
+    /*Minimo de???*/
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    position: fixed;  /*Permanece en el mismo lugar aunque se haga scroll*/  
+    top: 0;
+    left: 0;
+    /*Para que el modal este colocado delante de los demás elementos (el main-nav esta en z-index: 2000)*/
+    z-index: 3000;
+    /*Para ocultar el modal*/
+    display: none;
+}
+
+.modal__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.modal__img {
+    width: 50%; /*Para que la imagen ocupe el 50% del total de la pantalla*/
+    /*Para que las imagenes en el modal tengan el mismo tamaño*/
+    /*width: 500px;
+    height: 550px;
+    object-fit: cover;
+    */
+}
+
+/*Boton de X que se usará para cerrar el modal*/
+.modal__boton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    /*
+    background: rgba(0, 0, 0, 0.95);
+    border-radius: 50%;
+    */
+    font-size: 2.2em;
+    text-align: center;
+    font-family: monospace;
+}
+
+/*Se crea esta clase para que cuando se active, muestre u oculte el modal */
+.modal--open {
+    display: block;
+}

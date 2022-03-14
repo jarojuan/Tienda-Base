@@ -80,6 +80,7 @@ h1, h2, h3, h4, h5, h6 {
 .main-nav {
     width: 100%;
     position: relative;
+    /*Para colocar la barra de menú por delante de los demás elementos*/
     z-index: 2000;
     padding: 10px;
 }

@@ -1,3 +1,5 @@
+//Animación para un menú desplegable
+
 //Variable para el botón de menú
 let btnMenu = document.getElementById('btnmenu');
 

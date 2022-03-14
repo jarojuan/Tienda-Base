@@ -7,13 +7,8 @@
     <title>Galería | Juegos prueba 1</title>
     <!--Vincular css-->
     <link rel="stylesheet" href="css/estilos.css">
-
     <link rel="stylesheet" href="css/galeria.css">
 
-    <!--Vincular iconos fontawesome-->
-    <!--
-        <script src="https://kit.fontawesome.com/17e5e563d3.js" crossorigin="anonymous"></script>
-    -->
     <!--Trabajar con los iconos en local, archivo css y carpeta de webfonts-->
     <link rel="stylesheet" href="css/all.min.css">
 
@@ -22,19 +17,23 @@
 
 </head>
 <body>
-    <!--Atajos de brackets-->
-    <!--header.main-header>.container-->
+
+    <!--Para la animación con js-->
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <img src="" alt="" class="modal__img" id="modal__img">
+        </div>
+        <!--Para el botón X que se usará para cerrar-->
+        <div class="modal__boton" id="modal__boton">X</div>
+    </div>
+
     <header class="main-header">
         <div class="container container--flex">
-            <!--.logo-container>h1.logo-->
             <div class="logo-container column column--50">
                 <h1 class="logo">Tus videojuegos</h1>
             </div>
-            <!--.main-header__contactInfo>.main-header__contactInfo__phone-->
             <div class="main-header__contactInfo column column--50">
                 <p class="main-header__contactInfo__phone">
-                    <!--El <i> va dentro del span para que no afecte al texto-->                
-                    <!--<span class="fa-solid fa-phone"> 999-999-999</span>-->
                     <span><i class="icon-phone fa-solid fa-phone"></i> 999-999-999</span>
                 </p>
                 <p class="main-header__contactInfo__address">
@@ -44,18 +43,15 @@
         </div>
     </header>
     
-    <!--    nav.main-nav>.container-->
     <nav class="main-nav">
         <div class="container container--flex">
             <span><i class="icon-menu fa-solid fa-bars" id="btnmenu"></i></span>
-            <!--ul.menu#menu>li.menu__item*4>a.menu__link-->
             <ul class="menu" id="menu">
                 <li class="menu__item"><a href="index.html" class="menu__link">Inicio</a></li>
                 <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
                 <li class="menu__item"><a href="galeria.html" class="menu__link menu__link--select">Galería</a></li>
                 <li class="menu__item"><a href="contacto.html" class="menu__link">Contactos</a></li>
             </ul>
-            <!--.social-icon>a.social-icon__link>span-->
             <div class="social-icon">
                 <a href="" class="social-icon__link"><span><i class="icon-facebook fa-brands fa-facebook-f"></i></span></a>
                 <a href="" class="social-icon__link"><span><i class="icon-twitter fa-brands fa-twitter"></i></span></a>
@@ -64,16 +60,12 @@
         </div>
     </nav>
 
-    <!--section.banner>img.banner__img+.banner__content-->
     <section class="banner">
         <img src="img/galeria/banner-galeria.jpg" alt="" class="banner__img">
         <div class="banner__content">Lo mejor directo a tu consola</div>
     </section>
 
-    <!--main.main>section.group-->
     <main class="main">
-
-        <!--Imágenes de la galería-->
         <div class="group gallery">
             <h2 class="group__title">Nuestra Galería</h2>
             <div class="container container--flex">
@@ -97,7 +89,6 @@
                 </div>
             </div>
         </div>   
-
     </main>
 
     <footer class="main-footer">
@@ -114,24 +105,19 @@
             </div>
             <div class="column column--33">
                 <h2 class="column__title">Síguenos</h2>
-
-                <!--
-                <p class="column__txt"><a href=""><i class="icon-facebook fa-brands fa-facebook"></i>Facebook</a></p>
-                <p class="column__txt"><a href=""><i class="icon-twitter fa-brands fa-twitter"></i>Twitter</a></p>
-                <p class="column__txt"><a href=""><i class="icon-youtube fa-brands fa-youtube"></i>Visita nuestro canal</a></p>
-                -->
-
                 <p class="column__txt"><a href="" class="icon-facebook fa-brands fa-facebook">Facebook</a></p>
                 <p class="column__txt"><a href="" class="icon-twitter fa-brands fa-twitter">Twitter</a></p>
                 <p class="column__txt"><a href="" class="icon-youtube fa-brands fa-youtube">Visita nuestro canal</a></p>
-
             </div>
             <p class="copy">© 2022 Mis Videjuegos | Todos los derechos reservados</p>
         </div>
     </footer>
 
-    <!--Enlazar con el archivo menu js-->
+    <!--Vincular con el archivo menu js-->
     <script src="js/menu.js"></script>
+
+    <!--Vincular con el archivo modal js-->
+    <script src="js/modal.js"></script>
 
 </body>
 </html>
