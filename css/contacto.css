@@ -1,0 +1,103 @@
+/*Informacion e iconos de contacto*/
+.contact-information {
+    padding: 10px;  /*Margen izquierdo*/
+    padding-top: 0; /*Margen derecho*/
+    margin-bottom: 30px;    /*Margen por abajo*/
+    /*border-bottom: 1px solid;   /*Línea horizontal por abajo*/
+}
+
+/*Título de información de contacto*/
+.contact-information .column__title {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-weight: 100;
+}
+
+/*A todos los iconos dentro de contact-information*/
+.contact-information [class*="icon-"] {
+    font-size: 1.1em;
+    margin-right: 7px;
+    position: relative;
+    top: 5px;
+}
+
+/*Iconos de redes sociales (toda su línea)*/
+.contact-information .social-icon {
+    justify-content: flex-start;    /*Los coloca a la izquierda*/
+    margin-bottom: 10px;
+    /*background: black;/*Para comprobar a lo que afecta*/
+}
+
+/*SOLO a los iconos dentro del social-icon*/
+.contact-information .social-icon [class*="icon-"] {
+    background-color: black;
+    color: white;
+    margin-left: 0;
+    margin-right: 15px; /*Separación entre los iconos*/
+}
+
+/*A todo el formulario*/
+.formulario {
+    padding: 10px;
+    padding-top: 0;
+}
+
+/*Al contenido de formulario*/
+.formulario__label, .formulario__input--txt, .formulario__textarea {
+    display: block;
+    width: 100%;
+}
+
+/*A los input*/
+.formulario__input--txt {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+/*Al área de mensaje*/
+.formulario__textarea {
+    /*Para evitar que el usuario pueda modificar el tamaño con el ratón*/
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+}
+
+.formulario__btn {
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+
+/*---------------------Estilos responsive---------------------*/
+
+@media screen and (min-width:480px) {
+    
+    .contact .container--flex {
+        align-items: flex-start;
+    }
+    
+    .contact-information p {
+        font-size: 0.85em;
+    }
+
+    .contact-information {
+        border-right: 1px solid;    /*Añade una línea vertical*/
+        /*height: 425px;  /*Altura (afeta a la línea vertical)*/
+        height: 376px;
+        /*border-bottom: none;/*Quita la líena de abajo*/
+    }
+}
+
+@media screen and (min-width:768px) {
+    
+    .contact-information p {
+        font-size: 1em;
+    }
+
+    .contact-information .column__title {
+        font-size: 1.5em;
+    }
+}
+
+

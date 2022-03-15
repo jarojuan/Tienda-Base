@@ -145,11 +145,13 @@ h1, h2, h3, h4, h5, h6 {
     padding: 15px;
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 /*Cambia el color del fondo al pasar el ratón por los menu__link*/
 .menu__link:hover {
     background: red;
+    font-weight: bold;
 }
 
 /*Resalta en el menú la página en la que estamos*/
@@ -160,7 +162,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Clase que llama js para desplegar el menu*/
 .mostrar {
-    height: 180px;  /*Tamaño que ocupa el menú desplegado*/
+    height: 186px;  /*Tamaño que ocupa el menú desplegado*/
 }
 
 

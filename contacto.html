@@ -4,28 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galería | Juegos prueba 1</title>
+    <title>Contacto | Juegos prueba 1</title>
     <!--Vincular css-->
     <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="css/contacto.css">
 
     <!--Trabajar con los iconos en local, archivo css y carpeta de webfonts-->
     <link rel="stylesheet" href="css/all.min.css">
 
     <!--Icono de pestaña-->
-    <link rel="icon" href="iconos/icon-photo.svg">
+    <link rel="icon" href="iconos/icon-contact.svg">
 
 </head>
 <body>
-
-    <!--Para la animación con js-->
-    <div class="modal" id="modal">
-        <div class="modal__content">
-            <img src="" alt="" class="modal__img" id="modal__img">
-        </div>
-        <!--Para el botón X que se usará para cerrar-->
-        <div class="modal__boton" id="modal__boton">X</div>
-    </div>
 
     <header class="main-header">
         <div class="container container--flex">
@@ -49,8 +40,8 @@
             <ul class="menu" id="menu">
                 <li class="menu__item"><a href="index.html" class="menu__link">Inicio</a></li>
                 <li class="menu__item"><a href="nosotros.html" class="menu__link">Nosotros</a></li>
-                <li class="menu__item"><a href="galeria.html" class="menu__link menu__link--select">Galería</a></li>
-                <li class="menu__item"><a href="contacto.html" class="menu__link">Contacto</a></li>
+                <li class="menu__item"><a href="galeria.html" class="menu__link">Galería</a></li>
+                <li class="menu__item"><a href="contacto.html" class="menu__link menu__link--select">Contacto</a></li>
             </ul>
             <div class="social-icon">
                 <a href="" class="social-icon__link"><span><i class="icon-facebook fa-brands fa-facebook-f"></i></span></a>
@@ -61,34 +52,45 @@
     </nav>
 
     <section class="banner">
-        <img src="img/banner-galeria.jpg" alt="" class="banner__img">
-        <div class="banner__content">Lo mejor directo a tu consola</div>
+        <img src="img/banner-contact.jpg" alt="" class="banner__img">
+        <div class="banner__content">Déjanos un mensaje</div>
     </section>
 
     <main class="main">
-        <div class="group gallery">
-            <h2 class="group__title">Nuestra Galería</h2>
+        <section class="group contact">
+            <h2 class="group__title">Contáctanos</h2>
             <div class="container container--flex">
-                <div class="column column--50-25">
-                    <!--La primera imagen se verá grande y la otra más pequeña-->
-                    <img src="img/galeria/gal1.jpg" alt="" class="gallery__img gallery__img--big">
-                    <img src="img/galeria/gal2.jpg" alt="" class="gallery__img gallery__img--small">
+                <!--Información e iconos de contacto-->
+                <div class="contact-information column column--50">
+                    <h3 class="column__title">Información de contacto</h3>
+                    <p class="column__txt">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum deserunt sapiente fugit. Accusantium fugit sint, ad temporibus culpa qui vitae laborum perspiciatis. </p>
+                    <p class="column__txt"><span class="icon-phone fa-solid fa-phone"></span> Teléfono 1: 999-999-999</p>
+                    <p class="column__txt"><span class="icon-phone fa-solid fa-phone"></span> Teléfono 2: 999-999-999</p>
+                    <p class="column__txt"><span class="icon-location fa-solid fa-location-dot"></span> C/ Los Olivos 23, Madrid</p>
+                    <p class="column__txt"><span class="icon-mail fa-solid fa-envelope"></span> ayuda@videojuegos.com</p>
+                                
+                    <!--Iconos de redes sociales-->
+                    <div class="social-icon">
+                        <a href="" class="social-icon__link"><span><i class="icon-facebook fa-brands fa-facebook-f"></i></span></a>
+                        <a href="" class="social-icon__link"><span><i class="icon-twitter fa-brands fa-twitter"></i></span></a>
+                        <a href="" class="social-icon__link"><span><i class="icon-mail fa-solid fa-envelope"></i></span></a>
+                    </div>
                 </div>
-                <div class="column column--50-25">
-                    <!--La primera imagen se verá pequeña y la otra más grande-->
-                    <img src="img/galeria/gal3.jpg" alt="" class="gallery__img gallery__img--small">
-                    <img src="img/galeria/gal4.jpg" alt="" class="gallery__img gallery__img--big">
-                </div>
-                <div class="column column--50-25">
-                    <img src="img/galeria/gal5.jpg" alt="" class="gallery__img gallery__img--big">
-                    <img src="img/galeria/gal6.jpg" alt="" class="gallery__img gallery__img--small">
-                </div>
-                <div class="column column--50-25">
-                    <img src="img/galeria/gal7.jpg" alt="" class="gallery__img gallery__img--small">
-                    <img src="img/galeria/gal8.jpg" alt="" class="gallery__img gallery__img--big">
-                </div>
+
+                <!--Formulario-->
+                <form action="" method="post" class="formulario column column--50">
+                    <label for="" class="formulario__label">Nombre:</label>
+                    <input type="text" class="formulario__input--txt" name="nombre">
+                    <label for="" class="formulario__label">Correo:</label>
+                    <input type="text" class="formulario__input--txt" name="correo">
+                    <label for="" class="formulario__label">Teléfono:</label>
+                    <input type="text" class="formulario__input--txt" name="telefono">
+                    <label for="" class="formulario__label">Mensaje:</label>
+                    <textarea name="mensaje" id="" cols="30" rows="10" class="formulario__textarea"></textarea>
+                    <input type="submit" class="btn formulario__btn" value="Enviar">
+                </form>
             </div>
-        </div>   
+        </section>
     </main>
 
     <footer class="main-footer">
@@ -115,9 +117,6 @@
 
     <!--Vincular con el archivo menu js-->
     <script src="js/menu.js"></script>
-
-    <!--Vincular con el archivo modal js-->
-    <script src="js/modal.js"></script>
 
 </body>
 </html>
