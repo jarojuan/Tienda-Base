@@ -1,5 +1,21 @@
 /*Importar fuentes de google fonts*/
+/*
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100&family=ZCOOL+QingKe+HuangYou&display=swap');
+*/
+
+/*Vincular fuentes descargadas*/
+@font-face {
+    /*Se pone el nombre que se vaya a usar luego en este css para llamar a la fuente*/
+    font-family: 'Roboto Serif';
+    /*Los .. son porque el archivo de estilos.css está dentro de una carptea, 
+    y hay que salir de ella para llegar a la carpeta de las fuentes*/
+    src: url(../fuentes/RobotoSerif-Italic-VariableFont_GRAD\,opsz\,wdth\,wght.ttf);
+}
+
+@font-face {
+    font-family: 'Patua One';
+    src: url(../fuentes/PatuaOne-Regular.ttf);
+}
 
 * {
     box-sizing: border-box;
@@ -50,7 +66,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.8em;
     color: red;
     padding: 10px;
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-family: 'Patua One', cursive;
     /*font-weight: 100;*/   /*Grosor de texto*/
 }
 
@@ -216,7 +232,7 @@ h1, h2, h3, h4, h5, h6 {
 .main__title {
     margin: 15px 0;
     font-size: 1.8em;
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-family: 'Patua One', cursive;
     font-weight: 100;
 }
 
@@ -250,7 +266,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /*Titulo de la zona de ofertas */
 .group__title {
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-family: 'Patua One', cursive;
     text-align: center;
     font-weight: 100;
     font-size: 1.8em;
